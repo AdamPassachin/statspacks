@@ -1,0 +1,44 @@
+.datebar {
+    background: linear-gradient(to right,#ffffff,#4d4a89); /* Light background color */
+    width: 90%;
+    display: flex;
+    padding: 8px;
+    margin: 15px;
+    top: 90px;
+    border-radius: 8px;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: center;
+}
+
+.button-size{
+    height: 25px;
+    width: 25px;
+}
+
+.datebutton{
+    border: none; /* Remove default border */
+    padding: auto; /* Padding inside the button */
+    cursor: pointer; /* Mouse pointer on hover */
+    display: inline-flex; /* Flex to center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background: none;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+.datebutton:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight darkening effect */
+}
+
+.calendar-img{
+    width: 35px;
+    height: 40px;
+    margin: 50px;
+}
