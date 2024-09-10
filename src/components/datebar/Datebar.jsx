@@ -8,7 +8,15 @@ import { useState } from 'react'
 export default function Datebar(){
 
     // list of days
-    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday'];
+    const days = ['Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday','Sunday'];
+
+    // get date for chosen day
+    const getFormattedDate = (index) => {
+        const today = new Date();
+        today.setDate(today.getDate() + (index - current_today())); // Adjust the date according to index
+        const options = { month: 'short', day: 'numeric', year: 'numeric' }; // format the date object with an option
+        return today.toLocaleDateString('en-US', options); // format the date object to a string
+    };
 
     // get index for current day
     const current_today = () => {
@@ -18,12 +26,12 @@ export default function Datebar(){
 
     // change state to previous day
     const previous_day = () => {
-        setCurrentDayIndex((prevIndex) => (prevIndex === 0 ? days.length - 1: prevIndex - 1 ));
+        setCurrentDayIndex((prevIndex) => (prevIndex === 0 ? 0: prevIndex - 1 ));
     }
 
     // change state to next day
     const next_day = () => {
-        setCurrentDayIndex((prevIndex) => (prevIndex === days.length - 1 ? 0: prevIndex + 1 ));
+        setCurrentDayIndex((prevIndex) => (prevIndex === days.length - 1 ? days.length - 1: prevIndex + 1 ));
     }
 
     // state to keep track of current day index
@@ -34,7 +42,7 @@ export default function Datebar(){
             <Datebutton onClick = {previous_day} orientation = {leftbutton}/>
             <Datebutton onClick= {next_day} orientation = {rightbutton} />
             <img src={calendar} alt = "calendar-image" className='calendar-img'/>
-            <p className='date-dayheader'>{days[currentDayIndex]}</p>
+            <p className='date-dayheader'>{days[currentDayIndex]}, {getFormattedDate(currentDayIndex)} </p>
         </div>
     );
 }

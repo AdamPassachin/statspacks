@@ -1,0 +1,23 @@
+.fixture-area{
+    position: absolute;
+    top: 225px;
+    left: 58px;
+    right: 58px;
+    bottom: 100px;
+}
+
+.fixture-font{
+    font-size: 24px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+
+.fixture{
+    background: linear-gradient(to bottom,#1B1496,#090630);
+    border-radius: 8px;
+    margin-top: 20px;
+}

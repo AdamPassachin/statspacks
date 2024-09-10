@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .datebar {
     background: linear-gradient(to right,#ffffff,#4d4a89); /* Light background color */
     width: 90%;
@@ -38,12 +40,14 @@
 .calendar-img{
     width: 35px;
     height: 40px;
-    margin: 50px;
+    margin: 30px;
 }
 
 .date-dayheader{
     font-size: 20px;
-    margin: 5px;
-    font-style: italic;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 
 }
+

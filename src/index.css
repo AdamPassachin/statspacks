@@ -24,7 +24,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(to top, #1B1496, #090630);
+  background: linear-gradient(to bottom, #1F1F39 0%,#3D3D70 31%, #56569F 100%);
   background-attachment: fixed;
 }
 

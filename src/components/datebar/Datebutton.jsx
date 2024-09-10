@@ -1,9 +1,9 @@
 import './Datebar.css'
 
-export default function Datebutton({orientation}){
+export default function Datebutton({onClick, orientation}){
     return(
-        <button className='datebutton'>
-                <img src={orientation} alt="leftbutton" className='button-size' />
+        <button onClick={onClick} className='datebutton'>
+                <img src={orientation} alt="date-button" className='button-size' />
         </button>
     );
 }
