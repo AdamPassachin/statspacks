@@ -26,8 +26,6 @@
     padding: auto; /* Padding inside the button */
     cursor: pointer; /* Mouse pointer on hover */
     display: inline-flex; /* Flex to center the icon */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
     background: none;
     margin: 0px;
     border-radius: 4px;
@@ -41,4 +39,11 @@
     width: 35px;
     height: 40px;
     margin: 50px;
+}
+
+.date-dayheader{
+    font-size: 20px;
+    margin: 5px;
+    font-style: italic;
+
 }

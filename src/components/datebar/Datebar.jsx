@@ -13,7 +13,17 @@ export default function Datebar(){
     // get index for current day
     const current_today = () => {
         const today_index = new Date().getDay();
-        return days[today_index]
+        return today_index;
+    }
+
+    // change state to previous day
+    const previous_day = () => {
+        setCurrentDayIndex((prevIndex) => (prevIndex === 0 ? days.length - 1: prevIndex - 1 ));
+    }
+
+    // change state to next day
+    const next_day = () => {
+        setCurrentDayIndex((prevIndex) => (prevIndex === days.length - 1 ? 0: prevIndex + 1 ));
     }
 
     // state to keep track of current day index
@@ -21,10 +31,10 @@ export default function Datebar(){
 
     return(
         <div className='datebar'>
-            <Datebutton orientation = {leftbutton}/>
-            <Datebutton orientation = {rightbutton} />
+            <Datebutton onClick = {previous_day} orientation = {leftbutton}/>
+            <Datebutton onClick= {next_day} orientation = {rightbutton} />
             <img src={calendar} alt = "calendar-image" className='calendar-img'/>
-            <p>Today is {currentDayIndex}</p>
+            <p className='date-dayheader'>{days[currentDayIndex]}</p>
         </div>
     );
 }
