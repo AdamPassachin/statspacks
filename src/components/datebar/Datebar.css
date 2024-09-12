@@ -2,12 +2,12 @@
 
 .datebar {
     background: linear-gradient(to right,#ffffff,#4d4a89); /* Light background color */
-    width: 90%;
+    width: 100%;
     display: flex;
     padding: 8px;
     margin: 15px;
     top: 90px;
-    border-radius: 8px;
+    border-radius: 0px;
     height: 50px;
     position: fixed;
     z-index: 1000;
@@ -31,6 +31,7 @@
     background: none;
     margin: 0px;
     border-radius: 4px;
+    
 }
 
 .datebutton:hover {
@@ -46,7 +47,7 @@
 .date-dayheader{
     font-size: 20px;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-weight: bold;
 
 }
