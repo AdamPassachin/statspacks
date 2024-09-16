@@ -23,11 +23,10 @@
     border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 600px;
+    min-height: 600px;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 0px;
     color: white;
     text-align: left;
 }
@@ -42,6 +41,8 @@
     justify-content: left;  /* Center the text horizontally */
     color: white;             /* Ensure text is white */
     flex-direction: row;
+    padding-left: 0px;
+    margin-bottom: 0px !important;
     
 }
 
@@ -73,7 +74,42 @@
 .vertical-line{
     border-left: 2px solid white; /* Thickness and color of the line */
     opacity: 0.4;
-    height: 50px; /* Height of the vertical line */
-    padding-left: 25px;
+    height: 60px; /* Height of the vertical line */
 }
 
+.row {
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    margin: 10px;
+  }
+
+  .team-img{
+    display: flex;
+    flex-direction: column; /* Places images in a column */
+    justify-content: center; /* Centers content vertically in this column */
+    align-items: flex-start; /* Aligns the images to the left */
+    padding-left: 0px !important;
+
+  }
+
+  
+  .team-logo {
+    width: 20px; /* You can adjust the size of the logos */
+    height: 20px;
+    margin: 5px 0; /* Add some spacing if needed */
+    padding: 0;
+  }
+  
+.team-names {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 0px !important;
+  }
+
+  .team-font{
+    margin: 5px;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
