@@ -4,9 +4,23 @@ import Fixtureleauge from './Fixtureleauge';
 import leaugelogo from '/src/assets/leaugelogo.svg'
 import image1 from '/src/assets/image1.svg'
 import image2 from '/src/assets/image2.svg'
+import { useState } from 'react';
 
 
 export default function Fixture(){
+    const [statpack, setstatpack] = useState(true);
+
+    const showStatPack = () => {
+        if(statpack){
+            
+        }
+    }
+    
+
+
+
+
+
     return(
         <div className='fixture-area'>
             <div className='row'>
