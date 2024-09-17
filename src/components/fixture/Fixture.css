@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
 .fixture-area{
     position: absolute;
@@ -120,8 +121,6 @@
     box-shadow: none; /* Remove the box shadow if any */
     color: white;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
 * {
   box-sizing: border-box;

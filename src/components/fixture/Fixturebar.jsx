@@ -1,9 +1,9 @@
 import './Fixture.css';
 
-export default function Fixturebar({ time, homelogo, awaylogo, homeTeam, awayTeam}) {
+export default function Fixturebar({ time, homelogo, awaylogo, homeTeam, awayTeam, onClick}) {
   return (
 
-  <div class="wrapper">
+  <div class="wrapper" onClick={onClick}>
     <a class="cta" href="#">
       <span><div className='row'>
           <div className='col-auto'>
