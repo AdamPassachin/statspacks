@@ -36,13 +36,13 @@ export default function Datebar(){
 
     // state to keep track of current day index
     const [currentDayIndex, setCurrentDayIndex] = useState(current_today());
-
     return(
-        <div className='datebar'>
+        <div className='datebar'>            
             <Datebutton onClick = {previous_day} orientation = {leftbutton}/>
             <Datebutton onClick= {next_day} orientation = {rightbutton} />
             <img src={calendar} alt = "calendar-image" className='calendar-img'/>
             <p className='date-dayheader'>{days[currentDayIndex]}, {getFormattedDate(currentDayIndex)} </p>
         </div>
+ 
     );
 }

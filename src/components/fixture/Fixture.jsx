@@ -15,6 +15,7 @@ export default function Fixture(){
                     <div className='fixture'>
                         <Fixtureleauge logo = {leaugelogo} leauge="Premier Leauge"/>
                         <Fixturebar homelogo={image1} awaylogo={image2} homeTeam = "Liverpool" awayTeam = "Manchester United" time = "18:00" />
+                        <Fixturebar homelogo={image1} awaylogo={image2} homeTeam = "Liverpool" awayTeam = "Manchester United" time = "18:00" />
                     </div>
                 </div>
                 <div className='col'>
