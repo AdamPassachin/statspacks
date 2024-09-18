@@ -222,3 +222,41 @@ path.two {
         fill: white;
     }
 }
+
+.game-header {
+    background: linear-gradient(to right, #17165B, #2E2C89); /* Light background color */
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    
+}
+
+.team-logo-detail {
+    width: 35px; /* You can adjust the size of the logos */
+    height: 35px;
+    margin: 5px; /* Add some spacing if needed */
+    margin-right: 10px;
+  }
+
+  .statpack-table-style {
+    width: 100%; /* Make the row take full width of the parent column */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Spread the columns evenly */
+    padding: 0; /* Ensure no extra padding, if needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+
+.header-style{
+    background: linear-gradient(to right, #32305E, #6964C3); 
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+
+}

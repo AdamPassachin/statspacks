@@ -10,31 +10,36 @@ import Fixturedetail from './Fixturedetail';
 
 export default function Fixture(){
     const [selectedFixture, setSelectedFixture] = useState(null);
+    const [isVisible, setIsVisible] = useState(true);
 
     const handleFixturebarClick = (fixture) => {
         setSelectedFixture(fixture);
+        setIsVisible(false);
     }
     
     return(
         <div className='fixture-area'>
+            {isVisible && (
             <div className='row'>
-                <div className='col'>
-                    <p className='fixture-header-font'>Fixtures</p>
-                    <div className='fixture'>
-                        <Fixtureleauge logo = {leaugelogo} leauge="Premier Leauge"/>
-                        <Fixturebar 
-                        homelogo={image1} 
-                        awaylogo={image2} 
-                        homeTeam = "Liverpool" 
-                        awayTeam = "Manchester United" 
-                        time = "18:00"
-                        onClick ={handleFixturebarClick({homeTeam: "Liverpool", awayTeam: "Manchester United" })} />
+                    <div className='col'>
+                        <p className='fixture-header-font'>Fixtures</p>
+                            <div className='fixture'>
+                                <Fixtureleauge logo = {leaugelogo} leauge="Premier League"/>
+                                <Fixturebar 
+                                homelogo={image1} 
+                                awaylogo={image2} 
+                                homeTeam = "Liverpool" 
+                                awayTeam = "Manchester United" 
+                                time = "18:00"
+                                onClick ={() => handleFixturebarClick({homeTeam: "Liverpool", awayTeam: "Manchester United" })} />
+                            </div>
                     </div>
-                </div>
                 <div className='col'>
-                    {selectedFixture && <Fixturedetail fixture={selectedFixture} />}
+                    {/* add right-side content? */}
                 </div>
             </div>
+            )}
+            {selectedFixture && <Fixturedetail fixture={selectedFixture} homelogo={image1} awaylogo={image2}  />}
         </div>
     );
 }
