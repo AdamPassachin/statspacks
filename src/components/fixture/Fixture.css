@@ -230,6 +230,7 @@ path.two {
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
+    margin-bottom: 20px;
     
 }
 
@@ -240,12 +241,18 @@ path.two {
     margin-right: 10px;
   }
 
-  .statpack-table-style {
+  .col-table-style {
     width: 100%; /* Make the row take full width of the parent column */
     display: flex; /* Use flexbox to align items */
     justify-content: space-between; /* Spread the columns evenly */
     padding: 0; /* Ensure no extra padding, if needed */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin-top: 40px !important;
+    text-align: left;
+    margin-bottom: 0px;
+    overflow: hidden; /* Ensure border-radius is applied cleanly */
+    border-top-left-radius: 8px; /* Adjust values as needed */
+    border-top-right-radius: 8px;
 }
 
 
@@ -259,4 +266,52 @@ path.two {
     width: 150px;
     height: 40px;
 
+}
+
+.row-detail-style {
+    text-align: left;
+    background-color: white;
+    padding: 10px;
+}
+
+.row-style{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 12px !important;
+}
+
+.last-row {
+    border-bottom-left-radius: 8px; /* Adjust values as needed */
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+ 
+/* returnbutton css */
+
+.return-button{
+    border: none; /* Remove default border */
+    padding: auto; /* Padding inside the button */
+    cursor: pointer; /* Mouse pointer on hover */
+    display: inline-flex; /* Flex to center the icon */
+    background: none;
+    margin: 0px;
+    border-radius: 4px;
+    
+}
+
+.return-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight darkening effect */
+}
+
+.return-button-size{
+    height: 30px;
+    width: 30px;
+}
+
+.return-button-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the button to the left */
+    margin-bottom: 20px; /* Adds space between the button and the content */
 }

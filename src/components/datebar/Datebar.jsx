@@ -7,6 +7,8 @@ import { useState } from 'react'
 
 export default function Datebar(){
 
+    // TO-DO: add functionality so that the fixtures days changes when button is pressed. Need to store games based on date. 
+
     // list of days
     const days = ['Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday','Sunday'];
 
