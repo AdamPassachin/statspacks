@@ -45,7 +45,14 @@ export default function Fixture(){
             </div>
             )}
             {/* Conditional if a fixture is pressed we show the fixturedetail component otherwise not shown */}
-            {selectedFixture && <Fixturedetail fixture={selectedFixture} homelogo={image1} awaylogo={image2}  />}
+            {selectedFixture && <Fixturedetail 
+                fixture={selectedFixture} //pass the fixture pressed
+                homelogo={image1} 
+                awaylogo={image2} 
+                setIsVisible={setIsVisible}   // Pass the state setter
+                isVisible={isVisible} // pass the state
+                setSelectedFixture={setSelectedFixture} // Pass the state setter for selected fixture
+            />}
         </div>
     );
 }
